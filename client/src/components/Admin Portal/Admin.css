@@ -1,0 +1,57 @@
+.admin-container {
+  width: 100%;
+  margin: 0 auto;
+  color: black; /* Set default text color for the container */
+}
+
+.btn-add, .btn-view-reports {
+  margin: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: black; /* Set text color for buttons */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit {
+  padding: 10px 10px;
+  background-color: #2196F3;
+  color: black; /* Set text color for buttons */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 10px 10px;
+  background-color: #f44336;
+  color: black; /* Set text color for buttons */
+  border: none;
+  cursor: pointer;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+  color: black; /* Set text color for table cells */
+}
+
+.admin-table th {
+  background-color: #f2f2f2;
+  color: black; /* Set text color for table headers */
+}
+
+.inactive {
+  background-color: #ffcccc; /* Light red background for deactivated accounts */
+}
+
+.inactive td {
+  text-decoration: line-through; /* Strikethrough text for deactivated accounts */
+  color: black; /* Set text color for inactive rows, if you want to keep the strikethrough effect */
+}

@@ -1,0 +1,196 @@
+.feed-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.GridFeedBlock {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 327px;
+    background-color: #FFD5C2;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Smooth transformation */
+}
+
+.GridFeedBlock:hover {
+    transform: scale(1.03); /* Slight scale up to imply interactivity */
+}
+
+.GridFeedBlockTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Added space between image and title */
+}
+
+.GridFeedBlockTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 8px; /* Space from the image */
+}
+
+.FeedTitle {
+    width: 100%;
+    text-align: left;
+    color: #607142;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.GridFeedBlockDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Use full height to push date to bottom */
+}
+
+.GridFeedBlockName {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.GridFeedBlockDate {
+    font-size: 12px;
+    color: #000;
+    align-self: flex-end;
+    margin-top: auto; /* Push date to bottom */
+}
+
+/* Style for modal content follows... */
+
+.GridFeedBlockImage {
+    width: 202px;
+    height: 191px;
+    margin-bottom: 10px;
+}
+
+.GridFeedBlockImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.GridFeedBlockVideo video,
+.GridFeedBlockAudio audio {
+    width: 100%;
+    max-height: 191px;
+    margin-bottom: 10px;
+}
+
+.clearPostsButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.clearPostsButton:hover {
+    background-color: #0056b3;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #e1ad99;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 90%;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+
+.close-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-button:hover {
+    color: #777;
+}
+
+.modal-body {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.modal-body .media-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-body img,
+.modal-body video,
+.modal-body audio {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the media elements */
+    gap: 10px; /* Add space between each media item */
+}
+
+.document-link {
+    margin-bottom: 10px; /* Add some space below each document link */
+}

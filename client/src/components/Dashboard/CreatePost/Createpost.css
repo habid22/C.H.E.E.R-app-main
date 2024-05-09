@@ -1,0 +1,148 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh; /* Limit modal height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+
+.close-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-button:hover {
+    color: #777;
+}
+
+.modal-body {
+    margin-top: 20px;
+}
+
+textarea, input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.file-inputs label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.file-inputs label:hover {
+    background-color: #e0e0e0;
+}
+
+.file-inputs input[type="file"] {
+    display: none; /* Hide the actual input */
+}
+
+.file-inputs svg {
+    margin-right: 5px;
+    color: #333;
+}
+
+.close-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Styles for the discard button to make it visually distinct */
+button.discard {
+    background-color: #ccc;
+    color: #333;
+}
+
+/* Adjustments for preview sizes */
+.previews img,
+.previews video,
+.previews audio {
+    max-width: 100%; /* Ensure it fits in the modal */
+    max-height: 200px; /* Adjust size to ensure it fits on screen */
+    object-fit: contain; /* Keep aspect ratio */
+    margin-top: 10px;
+}
+
+
+.preview-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .remove-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 0, 0, 0.7);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  

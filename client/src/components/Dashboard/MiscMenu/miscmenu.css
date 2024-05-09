@@ -1,0 +1,53 @@
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    /* overflow: hidden; */
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bell {
+    color: #030303;
+    fill: #030303;
+    font-size: 16px;
+    position: absolute;
+    top: 24px;
+    left: 1368px;
+    width: 16px;
+    height: 16px;
+}
+.search {
+    color: #030303;
+    fill: #030303;
+    font-size: 15px;
+    position: absolute;
+    top: 24px;
+    left: 1337px;
+    width: 15px;
+    height: 16px;
+}
+
+.profile {
+    position: absolute;
+    top: 24px;
+    left: 1400px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100000px;
+    background-image: url();
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

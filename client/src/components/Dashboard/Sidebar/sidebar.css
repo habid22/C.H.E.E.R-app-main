@@ -1,0 +1,55 @@
+:root {
+    --sidebar-bg-color: #ece8d5;
+    --icon-color: #607142;
+    --icon-size: 35px;
+    --sidebar-width: 94px;
+    --sidebar-padding: 24px;
+    --divider-color: #d3d3d3;
+    --video-call-bg-color: #607142;
+    --video-call-icon-color: #ffffff;
+}
+
+.sidebar-card {
+    position: absolute;
+    top: var(--sidebar-padding);
+    left: var(--sidebar-padding);
+    bottom: var(--sidebar-padding);
+    width: var(--sidebar-width);
+    overflow-y: auto;
+    background-color: var(--sidebar-bg-color);
+    border-radius: 8px;
+    box-shadow: 2px 0px 10px rgba(3, 3, 3, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(var(--sidebar-padding) / 2);
+    padding-bottom: calc(var(--sidebar-padding) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space distribution between top and bottom */
+    padding: 20px 0; /* Adjusted padding for top and bottom */
+}
+
+
+
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    width: 80%; /* Ensures alignment */
+    gap: 30px; /* Adjusted gap between icons */
+}
+
+.fa-svg-icon {
+    font-size: var(--icon-size); /* Control icon size */
+    color: var(--icon-color); /* Icon color */
+}
+
+
+
+/* Adjust margin for individual icons if necessary */
+.icon-button {
+    margin: 10px 0; /* Adjusted for visual spacing */
+}
+

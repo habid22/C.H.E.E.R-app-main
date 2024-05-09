@@ -1,0 +1,198 @@
+.contact-us-container,
+.email-us-container,
+.about-us-info {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-us-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-info {
+  font-family: 'Arial', sans-serif; /* Clean, professional font choice */
+  margin: 40px auto; /* Increased margin for more white space around the text */
+  max-width: 800px; /* Maintain maximum width for line length control */
+  padding: 20px;
+  background-color: rgba(97, 114, 67, 0.1); /* Light background for contrast */
+  border-radius: 8px; /* Soft edges */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle depth */
+}
+
+.about-us-info h1 {
+  color: #333333; /* Darker color for better contrast and emphasis */
+  margin-bottom: 1em; /* Increased space below the titles */
+  font-size: 28px; /* Larger font size for headings */
+  padding-bottom: .25em; /* Small padding for an underline effect */
+  border-bottom: 2px solid #ddd; /* Subtle bottom border to separate sections */
+}
+
+.about-us-info p {
+  margin-bottom: 1.5em; /* Larger space below paragraphs for distinct sections */
+  text-align: left; /* Align text to the left for better readability */
+  line-height: 1.6; /* Optimal line height for easy reading */
+  color: #555555; /* Soft color that's easier on the eyes */
+  font-size: 16px; /* Slightly larger font size for readability */
+}
+
+/* Style for the Facebook button to match the overall design */
+.facebook-button {
+  background-color: #4267B2; /* Facebook's brand color for recognition */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px; /* Spacing above the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Cursor to indicate clickable button */
+  text-align: center;
+  display: inline-block; /* Allows it to sit inline with text */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Increase the size of the Facebook icon inside the button for visibility */
+.facebook-button img {
+  width: 20px; /* Size of the Facebook icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Spacing between icon and button text */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .about-us-info {
+    padding: 15px;
+  }
+
+  .about-us-info h1 {
+    font-size: 24px; /* Slightly smaller font size for headings on small screens */
+  }
+
+  .about-us-info p {
+    font-size: 14px; /* Smaller font size for text on small screens */
+  }
+}
+
+
+/* If you want the entire page to use Poppins, consider setting it on the body element */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.our-partners {
+  margin: 40px auto; /* More balanced spacing and centering */
+  max-width: 960px; /* Max width for the container */
+  padding: 20px;
+  background-color: rgba(97, 114, 67, 0.1); /* Light background for contrast */
+  border-radius: 8px; /* Soft edges */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle depth */
+}
+
+.our-partners h2 {
+  color: #333; /* Darker color for better readability */
+  text-align: center;
+  margin-bottom: 30px; /* More space below the heading */
+  font-size: 24px; /* Slightly larger font size */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive grid */
+  gap: 30px; /* More space between items */
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text alignment for consistency */
+}
+
+.grid-item img {
+  width: auto; /* Adjust image width automatically */
+  max-width: 180px; /* Larger images */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* More space between image and text */
+  border-radius: 4px; /* Slightly rounded corners for images */
+}
+
+.grid-item p {
+  font-size: 18px; /* Larger font size for readability */
+  color: #555; /* Slightly lighter font color for a softer look */
+  margin: 0; /* Remove default margin */
+  padding: 5px 0; /* Padding to create space around text */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+}
+
+
+
+.hours-container {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(97, 114, 67, 0.1); /* Light background for contrast */
+  border-radius: 8px; /* Soft edges */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle depth */
+  color: #333; /* Darker text color for better readability */
+}
+
+.hours-container h2,
+.hours-container h3 {
+  text-align: left; /* Align titles to the left */
+  color: #5e4f59;
+  margin: 20px 0; /* Increased space around headings */
+  font-size: 22px; /* Standardize font size for consistency */
+}
+
+.hours-container h3 {
+  border-bottom: 2px solid #d3d3d3; /* Add a subtle separator under subheadings */
+  padding-bottom: 5px;
+}
+
+.hours-container p {
+  margin: 10px 0;
+  font-size: 16px; /* Increase font size for readability */
+  line-height: 1.6; /* Optimal line height for reading comfort */
+}
+
+.hours-container em {
+  display: block; /* Make notes their own block for distinction */
+  margin-top: 10px;
+  font-size: 14px; /* Smaller font size for notes */
+  color: #617243; /* Different color for emphasis */
+  font-style: italic;
+}
+
+/* Add a visual indicator for important notes */
+.hours-container em:before {
+  content: "⚠️ Note: ";
+  font-style: normal;
+  font-weight: bold;
+  color: #cc0000;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .hours-container {
+    padding: 15px;
+  }
+}
+
+
+.section-divider {
+  border-bottom: 2px dashed #617243; /* Visual separator with color accent */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Space around divider for visual breathing room */
+}

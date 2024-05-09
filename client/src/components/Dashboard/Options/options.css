@@ -1,0 +1,66 @@
+
+.options-card {
+    top: 200px;
+    left: 1000px;
+    width: 700px;
+    height: 100px; /* Adjust the value of 50px according to your needs */
+    position: relative;
+  
+}
+
+.inline-feed-toggle {
+    color: #607142;
+    font-size: 20px; /* Assuming you want to set the font size, but it doesn't apply to SVG directly */
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.grid-feed-toggle {
+    color: #607142;
+    font-size: 20px; /* Same note as above */
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.create-post-button, .view-message-button {
+    position: absolute;
+    top: 0px;
+    left: 100px; /* You might want to adjust this for .view-message-button to not overlap .create-post-button */
+    width: 188px;
+    height: 48px;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: 600;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
+
+
+
+}
+
+.create-post-button {
+    border: 1px solid #607142;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #607142;
+}
+
+.view-message-button {
+    left: 300px; /* Adjusted to prevent overlap with create-post-button */
+    border-radius: 12px;
+    background-color: #607142;
+    color: #ffffff;
+    border: 0;
+}

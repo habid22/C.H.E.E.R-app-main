@@ -1,0 +1,132 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px; /* Add padding to prevent elements from touching the edges */
+  background-color: #ece8d5;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-with-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; /* Match the input width */
+  max-width: 456px; /* Match the input max-width */
+  margin: 10px 0; /* Spacing around the wrapper */
+  position: relative;
+}
+
+.register-textinput {
+  color: #607142;
+  width: 90%;
+  max-width: 456px;
+  height: 49px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #e6ab9b;
+  border-radius: 5px;
+  margin: 10px 0; /* Unified margin for all inputs */
+  padding: 0px 8px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 7px;
+  color: #607142;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 18px;
+  outline: none;
+}
+
+.register-icon, .register-background {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  margin: 5px 0; /* Adjusted margin for consistency */
+}
+
+
+
+.register-button {
+  cursor: pointer; /* Cursor indicates clickable button */
+  width: 90%;
+  max-width: 486px;
+  height: 48px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #607142;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 22px;
+  outline: none;
+  margin: 20px 0; /* Increased spacing around the button */
+  
+}
+
+
+.register-button:disabled {
+  background-color: #a8a8a8; /* Disabled background color */
+  color: #d3d3d3; /* Disabled text color */
+  cursor: not-allowed; /* Cursor indicates button is not clickable */
+}
+
+.register-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.register-checkbox {
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+.register-text, .register-login, .register-instruction {
+  text-align: center;
+  margin: 10px 0;
+  color: #607142;
+}
+
+.register-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures background images stay behind form content */
+}
+
+.register-heading {
+  font-size: 50px;
+  font-weight: 800;
+  color: #607142;
+  margin: 20px 0;
+}
+
+
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .register-textinput, .register-button {
+    max-width: 90%; /* More responsive on smaller screens */
+  }
+
+  .register-icon-container, .register-background {
+    display: none; /* Hide icons and background images on smaller screens */
+  }
+}
+
+.login-link {
+  color: blue; /* Or your preferred color for links */
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px; /* Optional: Add some spacing if needed */
+}

@@ -1,0 +1,125 @@
+.home-page-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ece8d5;
+    position: relative; /* Set relative for stacking context */
+    z-index: 0; /* Stacking context starts here */
+  }
+  .home-page-image {
+    /* top: 59px; */
+    right: 42px;
+    /* width: 659px; */
+    height: 572px;
+    opacity: 0.5;
+   
+    position: absolute;
+    object-fit: cover;
+    /* box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5); */
+  }
+  .home-page-text {
+    left: 42px;
+    color: #607142;
+    width: 489px;
+    height: 234px;
+    position: relative;
+    z-index: 2; /* Higher than the image's z-index */
+    font-size: 51px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: none;
+    text-decoration: none;
+  }
+  .home-page-button, .home-page-button1, .home-page-button2, .home-page-button3 {
+    left: 42px;
+    color: #ffffff;
+    background-color: #607142; /* Dark green background */
+    border: none; /* No border for the Sign Up button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-weight: 600;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Hand icon on hover */
+    margin: 0 10px; /* Space between buttons */
+    position: relative;
+    z-index: 2; /* Higher than the image's z-index */
+    transition: box-shadow 0.3s ease
+  
+  }
+
+ 
+  
+  .home-page-button:hover, .home-page-button1:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* border: 3px solid #769656; */
+  }
+  
+  
+  .home-page-button1 {
+    color: #607142; /* Text color for About Us button */
+    background-color: transparent; /* Transparent background for About Us */
+    border: 2px solid #607142; /* Border for About Us */
+    position: relative;
+    z-index: 2; /* Higher than the image's z-index */
+  }
+  
+  @media(max-width: 991px) {
+    .home-page-image {
+      position: absolute;
+      object-fit: cover;
+      z-index: 1; /* Keep image behind */
+    }
+    .home-page-button, .home-page-button1 {
+      z-index: 2; /* Ensure buttons are above the image */
+    }
+  }
+  
+  @media(max-width: 767px) {
+    .home-page-image {
+      top: 59px;
+      left: -5px;
+      z-index: 1; /* Keep image behind */
+    }
+    .home-page-button, .home-page-button1 {
+      z-index: 2; /* Ensure buttons are above the image */
+    }
+  }
+  
+  @media(max-width: 479px) {
+    .home-page-image {
+      top: 77px;
+      right: 0px;
+      width: 100%; /* Adjust width to 100% to cover the screen */
+      height: auto; /* Adjust height to auto to maintain aspect ratio */
+      object-position: center;
+      z-index: 1; /* Keep image behind */
+    }
+    .home-page-text {
+      top: 64px;
+      left: 50%; /* Center the text horizontally */
+      transform: translateX(-50%); /* Adjust for the text width */
+      width: 90%; /* Adjust the text width to fit smaller screens */
+      font-size: 2.5rem; /* Adjust the font size for smaller screens */
+      z-index: 2; /* Ensure text is above the image */
+    }
+    .home-page-button, .home-page-button1 {
+      top: 64px;
+      left: 2%; /* Center the buttons horizontally */
+      z-index: 2; /* Ensure buttons are above the image */
+      position: relative; /* Let the buttons flow within the document */
+      margin: 10px auto; /* Center buttons with auto margins */
+      display: block; /* Stack buttons vertically */
+    }
+
+  }
+
+
+
+  
+

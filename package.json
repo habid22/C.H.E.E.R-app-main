@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "firebase": "^10.9.0",
+    "react-big-calendar": "^1.11.2",
+    "react-google-button": "^0.7.2"
+  }
+}

@@ -1,0 +1,94 @@
+/* CalendarStyles.css */
+
+.calendar-container {
+  height: 100%;
+  padding: 20px;
+  background-color: #ece8d5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rbc-day-bg {
+  background-color: #f5bfb1;
+}
+.rbc-day-bg.rbc-off-range-bg  {
+  
+  background-color: #f5f5f5;
+}
+.rbc-day-slot.rbc-time-column {
+  background-color: #daebff;
+}
+.rbc-day-slot.rbc-time-column.rbc-today{
+  background-color: #f5f5f5;
+}
+
+.rbc-event{
+  background-color: #607142;
+}
+.rbc-event-content{
+  background-color: #607142;
+}
+
+.rbc-event.rbc-selected {
+  background-color: #607142;
+}
+
+.rbc-btn-group{
+  background-color: #607142;
+}
+
+.rbc-btn-group button{
+  color: white;
+}
+
+.rbc-btn-group button:active{
+  background-color: #829660;
+  color: black;
+}
+
+.rbc-btn-group.rbc-active button{
+  background-color: #829660;
+  color: black;
+}
+  
+  .custom-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 500px;
+    margin: auto;
+    outline: none;
+  }
+  
+  .custom-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1040; /* Ensure this is high enough */
+  }
+  
+  .custom-modal h2 {
+    color: #333333;
+  }
+  
+  .custom-modal p {
+    color: #666666;
+  }
+  
+  .custom-modal button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .custom-modal button:hover {
+    background-color: #0056b3;
+  }
+  

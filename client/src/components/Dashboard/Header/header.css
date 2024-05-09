@@ -1,0 +1,99 @@
+.header-container{
+    width: 90%;
+    display: flex;
+    height: 35vh;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.header-profile {
+    color: #030303;
+    fill: #030303;
+    position: absolute;
+    top: 68px;
+    left: 120px;
+    width: 117px; 
+    height: 117px; 
+    border-radius: 50%; 
+}
+
+.small-text {
+    color: #607142;
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: 600;
+    line-height: 32px;
+    position: absolute;
+    top: 83px;
+    left: 290px;
+}
+
+.big-text {
+    color: #607142;
+    font-size: 32px;
+    font-family: Arial;
+    font-weight: 600;
+    line-height: 40px;
+    position: absolute;
+    top: 123px;
+    left: 290px;
+}
+
+.options-card {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    display: flex; /* Changed to flex layout for automatic alignment */
+    justify-content: left; /* Distributes space evenly around items */
+    width: 100%; /* Adjusted width for responsiveness */
+    /* Maximum width to prevent overstretching */
+    margin-top: 20px; /* Added margin for spacing */
+    padding: 10px; /* Padding added for internal spacing */
+    padding-left: 120px; /* Adjusted padding for left alignment */
+}
+
+
+
+.create-post-button, .view-message-button {
+    width: auto;
+    min-width: 189px; /* Set width to 189px */
+    height: 48px; /* Existing height, adjust as necessary */
+    padding: 8px 16px; /* Adjust padding to ensure text fits well within the button */
+    text-align: center; /* Ensure text is centered */
+    margin: 0 10px; /* Margin for spacing between buttons */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.create-post-button {
+    border: 1px solid #607142; /* Border for the create post button */
+    background-color: transparent; /* Transparent background */
+    color: #607142; /* Text color */
+}
+
+.create-post-button:hover {
+    background-color: #c2d89b; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.view-message-button {
+    background-color: #607142; /* Background color for the view message button */
+    color: #ffffff; /* Text color */
+    border: 0; /* No border */
+}
+
+.view-message-button:hover {
+    background-color: #829660; /* Background color on hover */
+}
+
